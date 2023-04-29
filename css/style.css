@@ -1,4 +1,127 @@
-body {
-	background-color: #0b4a2d;
-	font-family: Arial, Helvetica, sans-serif;
+/* Reset browser-specific styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+	background-color: rgb(2, 87, 2);
+
+}
+
+/* Style the navigation bar */
+header {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0.5em 1em 0.5em 1em;
+	background-color: rgb(8, 46, 8);
+}
+
+nav ul.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+	padding: 0.5em 8em 0.5em 8em;
+	background-color: rgb(8, 46, 8);
+}
+
+nav ul.navbar li a:hover {
+	background-color: #f1c40f;
+}
+
+
+/* Style the footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #022914;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	background-color: #02290c;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ 
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+	padding: 0 1em;
+	display: none;
+	overflow: hidden;
+	width: 55%;
+	background-color: #02290c;
+
+  }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #eee;
+	color: black;
+	cursor: pointer;
+	padding: 1em;
+	text-align: center;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	width: 100%;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: lightgray;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+ .panel {
+	/* padding: 1em; */
+	background-color: whitesmoke;
+	display: none;
+	overflow: hidden;
+	text-align: center;
+	padding: 0.8em 0;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul.navbar {
+        flex-direction: column;
+    }
+
+    nav ul.navbar li {
+        margin-bottom: 1em;
+    }
+}
+
+
